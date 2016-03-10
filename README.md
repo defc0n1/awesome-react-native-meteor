@@ -117,7 +117,7 @@ If you're trying to decide between React Native and Cordova, make sure to read u
 * Gentler learning curve / more familiar technologies
 
 **Disadvantages**
-* Some worrying bugs, like very long time top open app
+* Some worrying bugs, like very long time to open app.
 * Many believe [Blaze](https://www.discovermeteor.com/blog/blaze-react-meteor/) is on the way out
 * Ionic was designed to work with Angular. Meteoric is a hack (albeit a very good one).
 
