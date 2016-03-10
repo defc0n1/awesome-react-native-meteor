@@ -4,7 +4,6 @@ An "awesome" type curated list of how to use React Native and Meteor together. B
 *Please* contribute via PR.
 
 ![Awesome React Native Meteor](https://raw.githubusercontent.com/meteor-factory/awesome-react-native-meteor/master/awesome-react-native-meteor.jpg)
->>>>>>> 6b3955c5e68bc47d90525887470fbc51c41dfeb6
 
 ### React Native & Meteor - why, how, what?
 **React Native** - is responsible for the native apps
