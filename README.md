@@ -22,7 +22,7 @@ Meteor sends data via its proprietary [DDP](https://www.meteor.com/ddp) protocol
 This is used to `call` methods on the server and `subscribe` to data.
 
 ## Tutorials / Writeups
-* [Meteor + React Native. Learning from Experience.](http://blog.differential.com/meteor-react-native-learning-from-experience/) - Writeup overcoming various challenges of porting
+* [Meteor + React Native. Learning from Experience.](http://blog.differential.com/meteor-react-native-learning-from-experience/) - Writeup overcoming various challenges of porting todos example to React Native.
 
 ## Example apps
 * [Todos](https://github.com/spencercarli/meteor-todos-react-native) - Meteor todos wired up to React Native app
