@@ -22,6 +22,7 @@ This is used to `call` methods on the server and `subscribe` to data.
 
 ## Example apps
 * [Todos](https://github.com/spencercarli/meteor-todos-react-native) - Meteor todos wired up to React Native app
+* [Starter](https://github.com/meteor-factory/react-native-meteor-starter) - A starter app with Tinder and Chat examples
 * [Friends](https://github.com/JustMeteor/friends) - Simple app displaying list in collection. [Writeup here](http://justmeteor.com/blog/friends-connecting-meteor-and-react-native-by-example/)
 * [Scientists](https://github.com/hharnisc/react-native-meteor-websocket-polyfill) - Simple app demonstrating DDP functionality
 
