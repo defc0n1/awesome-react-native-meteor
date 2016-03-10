@@ -38,3 +38,15 @@ Our 10 cents:
 ### Gotchas
 * React Native is a way less smoothe developer experience than Meteor. Be prepared for lots of red angry error screens
 * Do not use arrow functions `() => ` to define `Meteor.publish` functions or `Meteor.methods({})`, otherwise `this` will not behave as expected
+
+## Tutorials / Writeups
+* [Meteor + React Native. Learning from Experience.](http://blog.differential.com/meteor-react-native-learning-from-experience/) - Writeup overcoming various challenges of porting 
+
+## Example apps
+* [Todos](https://github.com/spencercarli/meteor-todos-react-native) - Meteor todos wired up to React Native app
+* [Friends](https://github.com/JustMeteor/friends) - Simple app displaying list in collection. [Writeup here](http://justmeteor.com/blog/friends-connecting-meteor-and-react-native-by-example/)
+* [Scientists](https://github.com/hharnisc/react-native-meteor-websocket-polyfill) - Simple app demonstrating DDP functionality
+
+## Packages
+* [react-native-meteor](https://github.com/inProgress-team/react-native-meteor) A 'magic included' easy DDP connection exposing `subscribe`, `call`, `loginWithPassword` as well as `getMeteorData()` to use inside React components.
+* [node-ddp-client](https://github.com/hharnisc/node-ddp-client) exposes `call` and `subscribe`. Implemented [https://github.com/hharnisc/react-native-meteor-websocket-polyfill](https://github.com/hharnisc/react-native-meteor-websocket-polyfill) and [here](https://github.com/spencercarli/meteor-todos-react-native)
