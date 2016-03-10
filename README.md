@@ -48,5 +48,78 @@ Our 10 cents:
 * [Scientists](https://github.com/hharnisc/react-native-meteor-websocket-polyfill) - Simple app demonstrating DDP functionality
 
 ## Packages
-* [react-native-meteor](https://github.com/inProgress-team/react-native-meteor) A 'magic included' easy DDP connection exposing `subscribe`, `call`, `loginWithPassword` as well as `getMeteorData()` to use inside React components.
-* [node-ddp-client](https://github.com/hharnisc/node-ddp-client) exposes `call` and `subscribe`. Implemented [https://github.com/hharnisc/react-native-meteor-websocket-polyfill](https://github.com/hharnisc/react-native-meteor-websocket-polyfill) and [here](https://github.com/spencercarli/meteor-todos-react-native)
+###[react-native-meteor](https://github.com/inProgress-team/react-native-meteor)
+A 'magic included' easy DDP connection exposing `subscribe`, `call`, `loginWithPassword` as well as `getMeteorData()` to use inside React components.
+
+```
+@connectMeteor
+export default class App extends Component {
+  componentWillMount() {
+    const url = 'http://192.168.X.X:3000/websocket';
+    Meteor.connect(url);
+  }
+  startMeteorSubscriptions() {
+    Meteor.subscribe('todos');
+    Meteor.subscribe('settings');
+  }
+  getMeteorData() {
+    return {
+      settings: Meteor.collection('settings').findOne()
+    };
+  }
+  renderRow(todo) {
+    return (
+      <Text>{todo.title}</Text>
+    );
+  }
+  render() {
+    const { settings } = this.data;
+
+    <View>
+      <Text>{settings.title}</Text>
+        <MeteorListView
+          collection="todos"
+          selector={{done: true}}
+          options={{sort: {createdAt: -1}}}
+          renderItem={this.renderRow}
+        />
+    </View>
+
+  }
+}
+```
+
+
+###[node-ddp-client](https://github.com/hharnisc/node-ddp-client/tree/minimongo-cache)
+A more bare-bones package. It exposes `call` and `subscribe`. (Make sure to use the `minimongo-cache` branch).
+
+Implemented [https://github.com/hharnisc/react-native-meteor-websocket-polyfill](https://github.com/hharnisc/react-native-meteor-websocket-polyfill) and [here](https://github.com/spencercarli/meteor-todos-react-native).
+
+The methods are elegantly wrapped in Promises in [todos](https://github.com/spencercarli/meteor-todos-react-native).
+
+```
+componentWillMount() {
+  MessagesDB.subscribe(0, MESSAGES_INTERVAL)
+    .then(() => {
+      MessagesDB.observe((messages) => {
+        this.setState({
+          messages: messages
+        });
+      });
+    })
+    .then(() => {
+      return MessagesDB.messageCount();
+    })
+    .then((r) => {
+      this.setState({
+        totalMessageCount: r
+      })
+    })
+    .catch((err) => {
+      console.log('Error: ', err);
+    })
+},
+```
+
+## Videos
+* [Harrison Harnisch - React Native and Meteor - Devshop SF](https://www.youtube.com/watch?v=7BF5LHn2B5s)
