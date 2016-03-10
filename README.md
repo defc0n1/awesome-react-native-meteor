@@ -102,7 +102,7 @@ componentWillMount() {
 ## Videos
 * [Harrison Harnisch - React Native and Meteor - Devshop SF](https://www.youtube.com/watch?v=7BF5LHn2B5s)
 
-#### Why not use Meteor + Ionic + Cordova?
+### Why not use Meteor + Ionic + Cordova?
 It's been possible to build PhoneGap / Cordova apps for a while. You use the frontend library [Ionic](http://ionicframework.com/) with Meteor's [Blaze](https://www.meteor.com/blaze) which have been tied together nicely by [Meteoric](http://meteoric.github.io/).
 
 If you're trying to decide between React Native and Cordova, make sure to read up on the grand old [hybrid vs. native debate](https://www.google.de/search?q=hybrid+vs+native&oq=hybrid+vs+native&aqs=chrome..69i57l2j69i60j69i61j69i60j69i61.2722j0j1&sourceid=chrome&es_sm=119&ie=UTF-8).
