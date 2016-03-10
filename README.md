@@ -1,6 +1,8 @@
 # Awesome React Native Meteor
 An "awesome" type curated list of how to use React Native and Meteor together. Based on [Awesome React Native](https://github.com/jondot/awesome-react-native) which was based on [this](https://github.com/avelino/awesome-go), which was based on [this](https://github.com/vinta/awesome-python)...
 
+*Please* contribute via PR.
+
 ### React Native & Meteor - why, how, what?
 **React Native** - is responsible for the native apps
 **Meteor** is the server, providing the methods, account system etc.
