@@ -126,5 +126,5 @@ Our 10 cents:
 * Prototyping quickly -> Meteoric + Cordova. Building for the long haul -> React Native
 
 ### Gotchas
-* React Native is a way less smoothe developer experience than Meteor. Be prepared for lots of red angry error screens
+* React Native is a way less smooth development experience than Meteor. Be prepared for lots of red angry error screens
 * Do not use arrow functions `() => ` to define `Meteor.publish` functions or `Meteor.methods({})`, otherwise `this` will not behave as expected
